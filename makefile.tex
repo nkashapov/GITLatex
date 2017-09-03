@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+%Gummi|065|=)
+\title{\textbf{ Git and \LaTeX{}}}
+\author{Kashapov Niyaz}
+\date{}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+\usepackage{cite}
+
+\makeatletter
+\renewcommand{\@listI}{%
+\topsep=0pt }
+\makeatother
+\hypersetup{colorlinks,linkcolor={blue},citecolor={blue},urlcolor={navi}}  
+\makeatletter
+\let\old@itemize=\itemize
+\def\itemize{\old@itemize
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\leftskip}{0pt}
+}
+\makeatother
+\makeatletter
+\let\old@enumerate=\enumerate
+\def\enumerate{\old@enumerate
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\leftskip}{0pt}
+}\makeatother
+
+\graphicspath{{noiseimages/}}
+\definecolor{linkcolor}{HTML}{0000F0} % цвет ссылок
+\definecolor{urlcolor}{HTML}{0459B0} % цвет гиперссылок
+
+
+\hypersetup{pdfstartview=FitH,linkcolor=linkcolor,urlcolor=urlcolor,colorlinks=true}
+
+\usepackage{graphicx}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\section{Main Part}
+
+\section{Results}
+
+\section{Appendices}
+
+\newpage
+
+\begin{thebibliography}{9} 
+\bibitem{smth} Hello, World!
+\end{thebibliography} 
+
+\end{document}
